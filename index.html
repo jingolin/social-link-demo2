@@ -2,42 +2,68 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/jingo.css" />
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/ed635fd691.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
   </head>
-
   <body>
-    <div id="body">
-    <div id="container">
-      <div id="intro">
-        <img
-          id="image"
-          src="./966280794-website_widgets_mental_health_campaign_04-10.jpg"
-        />
-        <div id="name">Jessica Randall</div>
-        <div id="country">London, United kingdom</div>
-        <div id="job">"Front-end developer and avid reader"</div>
-      </div>
-      <div id="link">
-        <a
-          class="link"
-          href="https://github.com/jingolin/social-link-demo/blob/main/index.html"
-           onclick="myFunction(0)">Github</a
-        >
-
-        <a class="link" href="https://frontendmentor.io/challenges" onclick="myFunction('1')"
-          >Frontend Mentor</a
-        >
-
-        <a class="link" href="https://linkedin.com/feed/" onclick="myFunction(2)">Linkedin</a>
-
-        <a class="link" href="https://x.com" onclick="myFunction(3)">Twitter</a>
-        <a class="link" href="https://instagram.com" onclick="myFunction(4)">instagram</a>
+    <div class="description">
+      <div id="Sky">How's the sky looking today?</div>
+      <div class="searchBar">
+        <div class="inputwrapper">
+          <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+          <input id="Bar" type="search" placeholder="search for a place..." />
+        </div>
+        <button onclick="countrySearch()" id="searchBar" >Search</button>
       </div>
     </div>
+    <div class="main">
+      <div class="submain">
+        <div class="emptySpace"> 
+          <!-- <i class="fa-solid fa-sun"></i> -->
+          <p id="emptyspace"></p>
+        </div>
+        <div class="Display">
+          <div class="values one">
+            <p>Feels like</p>
+            <p id="feelslike"></p>
+          </div>
+          <div class="values two">
+            <p id="humidity">Humidity</p>
+            <p id="Sanitation"></p>
+          </div>
+          <div class="values three">
+            <p>Wind</p>
+            <p id="wind"></p>
+          </div>
+          <div class="values four">
+            <p>precipitation</p>
+            <p id="precipitation"></p>
+          </div>
+        </div>
+        <div id="day">
+          
+             <!-- <p id="Tue"></p>  -->
+          
+        </div>
+      </div>
+      <div class="forecast">
+        <div>
+          <p id="hour">Hourly forecast</p>
+        </div>
+        <div class="Time">
+          <div class="real">
+            <p id="three"></p>
+          </div>
+          
+           
+        </div>
+      </div>
     </div>
+  
+  
+  
 
     <script src="../myjs/myjs.js"></script>
   </body>
